@@ -1,16 +1,16 @@
-package com.example.eurekaclient;
+package com.winnie.testserver;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
-@EnableEurekaClient
+@EnableDiscoveryClient
 @SpringBootApplication
-public class EurekaClientApplication {
+public class TestServerApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(EurekaClientApplication.class, args);
+        SpringApplication.run(TestServerApplication.class, args);
     }
 
 }
