@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.winnie</groupId>
-    <artifactId>test-server</artifactId>
+    <artifactId>test-client</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>test-server</name>
     <description>Demo project for Spring Boot</description>

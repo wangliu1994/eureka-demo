@@ -1,4 +1,4 @@
-package com.winnie.testserver;
+package com.winnie.testclient;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
