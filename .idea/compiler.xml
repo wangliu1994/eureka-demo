@@ -9,7 +9,7 @@
         <module name="eureka-client" />
         <module name="eureka-server" />
         <module name="ribbon-consumer" />
-        <module name="test-server" />
+        <module name="test-client" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
