@@ -1,8 +1,10 @@
 package com.winnie.ribbonconsumer;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.client.RestTemplate;
 
 /**
  * @author : winnie
@@ -12,10 +14,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class ConsumerController {
     @Autowired
-    ConsumerService service;
+    RestTemplate restTemplate;
 
     @GetMapping(value = "/ribbon-consumer")
     public String helloController() {
-        return service.hello();
+        ResponseEntity<String> responseEntity = restTemplate.getForEntity("http://TEST-SERVICE/demo/hello", String.class);
+        return responseEntity.getBody();
     }
 }
